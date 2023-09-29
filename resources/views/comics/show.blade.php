@@ -12,7 +12,7 @@
                         <p> 
                             <strong>Artist: </strong>
                             @foreach ([$comic->artists] as $artist)
-                                {{$artist}}
+                            {{$artist}}
                             @endforeach
                         </p>
                         <p>
