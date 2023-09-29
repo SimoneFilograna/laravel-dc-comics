@@ -1,7 +1,12 @@
 @extends("layouts.public")
 
 @section("content")
-    <div class="container">        
+    <div class="container pt-5 position-relative">        
+
+        <div>
+            <a class="btn btn-primary current-button" href="#" role="button">CURRENT SERIES</a>
+        </div>
+
         <div class="row g-4">
 
             @foreach ( $comics as $singleComic )
@@ -13,9 +18,15 @@
                     <div class="card-body">
                         <p class="card-text">{{strtoupper($singleComic["series"])}}</p>
                     </div>
-                </div>               
+                </div>                   
             </div>              
             @endforeach
+            
+            <div class="text-center mb-5">
+                <a class="btn btn-primary mt-5 mb-4 px-5 fw-bold bottom-button" href="#" role="button">LOAD MORE</a>
+            </div>
         </div>
     </div>
+
+    @include("partials.merch")
 @endsection

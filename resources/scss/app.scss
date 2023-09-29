@@ -1,2 +1,39 @@
-@use "bootstrap";
+
 @use "@fortawesome/fontawesome-free/css/all.min.css";
+@use 'bootstrap';
+@use './partials/navbar';
+@use './partials/variables';
+@use './partials/bluebar';
+@use './partials/footer';
+@use './partials/main-container-card';
+
+main{
+    background-color: variables.$color-secondary-dark;
+
+    .current-button{
+        background-color: variables.$color-primary;
+        font-size: 1.5rem;
+        position: absolute;
+        top: -20px;
+        left: -10px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        font-weight: 600;
+        }
+
+    .card{
+        background-color: transparent;
+        border: transparent;
+    
+        .card-img-top{
+            object-fit: cover;
+            object-position: top;
+            aspect-ratio: 1/1;
+    }
+        .card-body{
+            padding: 1rem 0;
+            color: white;
+        }
+    }
+
+}

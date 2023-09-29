@@ -1,0 +1,47 @@
+@use "./mixins";
+@use "./variables";
+
+header{
+    
+    .top-container{
+        display: flex;
+        background-color: white;
+        padding: 1rem;
+        justify-content: space-between;
+
+            .logo{
+                img{
+                    width: 80px;
+                };
+            };
+
+            .list-menu{
+                nav{
+                    .nav-item{
+                        display: flex;
+                        font-size: .8rem;
+                        font-weight: 700;
+                        position: relative;
+
+                        .nav-link{
+                            color: variables.$text-dark-grey;
+
+                        &:hover {
+                            color: variables.$color-primary;
+                            };
+
+                        &:focus {
+                            color: variables.$color-primary;
+                            };
+                        };
+                    };
+                }
+            }
+        };
+    .jumbotron-img{
+        height: 400px;
+        background-image: url(/public/images/jumbotron.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    }
