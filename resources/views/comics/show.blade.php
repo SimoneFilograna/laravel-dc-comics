@@ -10,16 +10,11 @@
                         <h3 class="fs-1">{{$comic->title}}</h3>
                         <p>{{$comic->description}}</p>
                         <p> 
-                            <strong>Artist: </strong>
-                            @foreach ([$comic->artists] as $artist)
-                            {{$artist}}
-                            @endforeach
+                            <strong>Artist:</strong> {{join(", ",json_decode($comic["artists"]))}}
+    
                         </p>
                         <p>
-                            <strong>Writers:</strong>          
-                            @foreach ([$comic->writers] as $writer)
-                                {{$writer}}
-                            @endforeach
+                            <strong>Writers:</strong> {{join(", ",json_decode($comic["writers"]))}}         
                         </p>
                         <p> <strong>Sale date:</strong> {{$comic->sale_date}}</p>
                         <p> <strong>Tipo:</strong> {{$comic->type}}</p>
