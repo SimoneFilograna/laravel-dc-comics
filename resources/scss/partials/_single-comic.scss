@@ -1,0 +1,18 @@
+@use "./mixins";
+@use "./variables";
+
+.detail-container{
+    font-size: 1rem;
+    .bigger-container{
+
+        background-color: rgb(133, 125, 125);
+        padding: 1rem;
+        border-radius: 10px;
+        .img-box{
+            img{
+                width: 350px;
+            }
+        }
+
+    }
+}

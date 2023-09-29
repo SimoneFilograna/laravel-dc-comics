@@ -6,6 +6,7 @@
 @use './partials/bluebar';
 @use './partials/footer';
 @use './partials/main-container-card';
+@use './partials/single-comic';
 
 main{
     background-color: variables.$color-secondary-dark;
