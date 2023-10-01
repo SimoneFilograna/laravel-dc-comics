@@ -1,4 +1,5 @@
 @extends("layouts.public")
+@section("title", "DC Comics")
 
 @section("content")
     <div class="container pt-5 position-relative">        

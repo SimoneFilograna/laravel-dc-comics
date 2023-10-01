@@ -1,5 +1,7 @@
 @extends("layouts.public")
 
+@section("title", "Comic Details")
+
 @section("content") 
     <div class="detail-container text-white p-5">
 
