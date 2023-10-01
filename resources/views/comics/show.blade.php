@@ -29,5 +29,10 @@
                 </div>
             </div>
         </div>
+
+        <div class="text-center mt-5">
+            <a class="btn btn-primary mt-5 mb-4 px-5 fw-bold bottom-button" 
+                href="{{route("comics.index")}}" role="button">TORNA INDIETRO</a>
+        </div>
     </div>
 @endsection
