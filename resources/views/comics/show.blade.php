@@ -12,11 +12,11 @@
                         <h3 class="fs-1">{{$comic->title}}</h3>
                         <p>{{$comic->description}}</p>
                         <p> 
-                            <strong>Artist:</strong> {{join(", ",json_decode($comic["artists"]))}}
+                            <strong>Artist:</strong> {{implode(",",$comic["artists"])}}
     
                         </p>
                         <p>
-                            <strong>Writers:</strong> {{join(", ",json_decode($comic["writers"]))}}         
+                            <strong>Writers:</strong> {{implode(",", $comic["writers"]) }}         
                         </p>
                         <p> <strong>Sale date:</strong> {{$comic->sale_date}}</p>
                         <p> <strong>Tipo:</strong> {{$comic->type}}</p>
