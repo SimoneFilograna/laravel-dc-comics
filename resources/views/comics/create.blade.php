@@ -35,11 +35,11 @@
                         <label for="writers" class="form-label">WRITERS</label>
                         <input type="text" name="writers" id="writers" class="form-control">
                         
-                        
 
-
-
-
+                        <div class="text-center mb-5 d-flex gap-4">
+                            <a class="btn btn-primary mt-5 mb-4 px-5 fw-bold bottom-button" href="{{route("comics.create")}}" role="button">ADD</a>   
+                            <a class="btn btn-primary mt-5 mb-4 px-5 fw-bold bottom-button" href="{{route("comics.index")}}" role="button">CANCEL</a>   
+                        </div>
 
                     </div>
                 </div>
