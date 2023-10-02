@@ -24,7 +24,7 @@
             @endforeach
             
             <div class="text-center mb-5">
-                <a class="btn btn-primary mt-5 mb-4 px-5 fw-bold bottom-button" href="#" role="button">LOAD MORE</a>
+                <a class="btn btn-primary mt-5 mb-4 px-5 fw-bold bottom-button" href="{{route("comics.create")}}" role="button">ADD YOUR COMIC</a>
             </div>
         </div>
     </div>
