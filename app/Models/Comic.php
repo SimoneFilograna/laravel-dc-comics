@@ -14,15 +14,15 @@ class Comic extends Model
         "writers" => "array",
     ];
 
-    // protected $fillable = [
-    //     "title", 
-    //     "description",   
-    //     "thumb",   
-    //     "price", 
-    //     "series",    
-    //     "sale_date", 
-    //     "type",  
-    //     "artists",   
-    //     "writers"   
-    // ];
+    protected $fillable = [
+        "title",
+        "description",
+        "thumb",
+        "price",
+        "series",
+        "sale_date",
+        "type",
+        "artists",
+        "writers",
+    ];
 }
