@@ -22,7 +22,7 @@
                             <input type="text" name="thumb" id="thumb" class="form-control">
     
                             <label for="price" class="form-label">PRICE</label>
-                            <input type="number" name="price" id="price" class="form-control">
+                            <input type="number" step="0.01" name="price" id="price" class="form-control">
     
                             <label for="series" class="form-label">SERIES</label>
                             <input type="text" name="series" id="series" class="form-control">
