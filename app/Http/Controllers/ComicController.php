@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Comic;
+use App\Http\Requests\GenericUpdateComicsRequest;
 
 class ComicController extends Controller
 {
@@ -22,18 +23,8 @@ class ComicController extends Controller
         return view("comics.create");
     }
 
-    public function store(Request $request){
-        $data = $request->validate([
-            "title" => "required|string",
-            "description" => "required|string",
-            "thumb" => "required|string",
-            "price" => "required|decimal:0,2",
-            "series"=>"nullable|string",
-            "sale_date" => "nullable|date",
-            "type" => "nullable|string",
-            "artists" => "required|string",
-            "writers" => "required|string"
-        ]);
+    public function store(GenericUpdateComicsRequest $request){
+        $data = $request->validated();
 
         $data["artists"] = explode(",", $data["artists"]);
         $data["writers"] = explode(",", $data["writers"]);
@@ -65,20 +56,10 @@ class ComicController extends Controller
         return view("comics.edit", ["comic"=>$comic]);
     }
 
-    public function update(Request $request, $id){
+    public function update(GenericUpdateComicsRequest $request, $id){
         $comic = Comic::findOrFail($id);
 
-        $data = $request->validate([
-            "title" => "required|string",
-            "description" => "required|string",
-            "thumb" => "required|string",
-            "price" => "required|decimal:0,2",
-            "series"=>"nullable|string",
-            "sale_date" => "nullable|date",
-            "type" => "nullable|string",
-            "artists" => "required|string",
-            "writers" => "required|string"
-        ]);
+        $data = $request->validated();
 
         $data["artists"] = explode(",", $data["artists"]);
         $data["writers"] = explode(",", $data["writers"]);
