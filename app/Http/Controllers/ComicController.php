@@ -27,7 +27,7 @@ class ComicController extends Controller
             "title" => "required|string",
             "description" => "required|string",
             "thumb" => "required|string",
-            "price" => "required|decimal:2,8",
+            "price" => "required|decimal:0,2",
             "series"=>"nullable|string",
             "sale_date" => "nullable|date",
             "type" => "nullable|string",
