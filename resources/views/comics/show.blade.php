@@ -5,18 +5,24 @@
 @section("content") 
     <div class="detail-container text-white p-5">
 
+        
         <div class="container bigger-container">
-            <div class="row row-cols-2 align-items-center">
+            
+            {{-- editbutton --}}
+
+            <a href="{{route("comics.edit", $comic->id)}}"><i class="fa-solid fa-pen text-white"></i></a>
+            
+            <div class="row row-cols-2 align-items-center">        
                 <div class="col">
                     <div class="box px-5">
                         <h3 class="fs-1">{{$comic->title}}</h3>
                         <p>{{$comic->description}}</p>
                         <p> 
-                            <strong>Artist:</strong> {{implode(",",$comic["artists"])}}
+                            <strong>Artist:</strong> {{implode(",", $comic["artists"]) }}   
     
                         </p>
                         <p>
-                            <strong>Writers:</strong> {{implode(",", $comic["writers"]) }}         
+                            <strong>Writers:</strong> {{implode(",", $comic["writers"]) }}           
                         </p>
                         <p> <strong>Sale date:</strong> {{$comic->sale_date}}</p>
                         <p> <strong>Tipo:</strong> {{$comic->type}}</p>

@@ -17,11 +17,18 @@ Route::get("/", function(){
     return redirect()->route("comics.index");
 });
 
-Route::get("/comics", [ComicController::class, "index"])->name("comics.index");
 
-Route::post("/comics", [ComicController::class, "store"])->name("comics.store");
+//CREATE
 
 Route::get("/comics.create", [ComicController::class, "create"])->name("comics.create");
+Route::post("/comics", [ComicController::class, "store"])->name("comics.store");
 
+//READ
 
+Route::get("/comics", [ComicController::class, "index"])->name("comics.index");
 Route::get("/comics/{comic}", [ComicController::class, "show"])->name("comics.show");
+
+// UPDATE
+
+Route::get("comics/{comic}/edit", [ComicController::class, "edit"])->name("comics.edit");
+Route::match(["PUT", "PATCH"], "/comics/{comic}", [ComicController::class, "update"])->name("comics.update");

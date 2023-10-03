@@ -12,32 +12,50 @@
                         <form action="{{ route("comics.store") }}" method="POST">
                             @csrf()
 
-                            <label for="title" class="form-label">TITLE</label>
-                            <input type="text" name="title" id="title" class="form-control">
-    
-                            <label for="description" class="form-label">DESCRIPTION</label>
-                            <textarea name="description" id="description" class="form-control"></textarea>
+                            <div class="mb-3">
+                                <label for="title" class="form-label">TITLE</label>
+                                <input type="text" name="title" id="title" class="form-control">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="description" class="form-label">DESCRIPTION</label>
+                                <textarea name="description" id="description" class="form-control"></textarea>
+                            </div>
                                 
-                            <label for="thumb" class="form-label">COMIC COVER</label>
-                            <input type="text" name="thumb" id="thumb" class="form-control">
+                            <div class="mb-3">
+                                <label for="thumb" class="form-label">COMIC COVER</label>
+                                <input type="text" name="thumb" id="thumb" class="form-control">
+                            </div>
     
-                            <label for="price" class="form-label">PRICE</label>
-                            <input type="number" step="0.01" name="price" id="price" class="form-control">
-    
-                            <label for="series" class="form-label">SERIES</label>
-                            <input type="text" name="series" id="series" class="form-control">
-    
-                            <label for="date" class="form-label">SALE DATE</label>
-                            <input type="date" name="sale_date" id="date" class="form-control">
-    
-                            <label for="type" class="form-label">TYPE</label>
-                            <input type="text" name="type" id="type" class="form-control">
+                            <div class="mb-3">
+                                <label for="price" class="form-label">PRICE</label>
+                                <input type="number" step="0.01" name="price" id="price" class="form-control">
+                            </div>
                             
-                            <label for="artists" class="form-label">ARTISTS</label>
-                            <input type="text" name="artists" id="artists" class="form-control">
+                            <div class="mb-3">
+                                <label for="series" class="form-label">SERIES</label>
+                                <input type="text" name="series" id="series" class="form-control">
+                            </div>
                             
-                            <label for="writers" class="form-label">WRITERS</label>
-                            <input type="text" name="writers" id="writers" class="form-control">
+                            <div class="mb-3">
+                                <label for="date" class="form-label">SALE DATE</label>
+                                <input type="date" name="sale_date" id="date" class="form-control">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="type" class="form-label">TYPE</label>
+                                <input type="text" name="type" id="type" class="form-control">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="artists" class="form-label">ARTISTS</label>
+                                <input type="text" name="artists" id="artists" class="form-control">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="writers" class="form-label">WRITERS</label>
+                                <input type="text" name="writers" id="writers" class="form-control">
+                            </div>
                             
     
                             <div class="text-center mb-5 d-flex gap-4">
