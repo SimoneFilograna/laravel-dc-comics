@@ -14,47 +14,47 @@
 
                             <div class="mb-3">
                                 <label for="title" class="form-label">TITLE</label>
-                                <input type="text" name="title" id="title" class="form-control">
+                                <input type="text" name="title" id="title" class="form-control" value="{{old("title")}}">
                             </div>
                             
                             <div class="mb-3">
                                 <label for="description" class="form-label">DESCRIPTION</label>
-                                <textarea name="description" id="description" class="form-control"></textarea>
+                                <textarea name="description" id="description" class="form-control" value="{{old("description")}}"></textarea>
                             </div>
                                 
                             <div class="mb-3">
                                 <label for="thumb" class="form-label">COMIC COVER</label>
-                                <input type="text" name="thumb" id="thumb" class="form-control">
+                                <input type="text" name="thumb" id="thumb" class="form-control" value="{{old("thumb")}}">
                             </div>
     
                             <div class="mb-3">
                                 <label for="price" class="form-label">PRICE</label>
-                                <input type="number" step="0.01" name="price" id="price" class="form-control">
+                                <input type="number" step="0.01" name="price" id="price" class="form-control" value="{{old("price")}}">
                             </div>
                             
                             <div class="mb-3">
                                 <label for="series" class="form-label">SERIES</label>
-                                <input type="text" name="series" id="series" class="form-control">
+                                <input type="text" name="series" id="series" class="form-control" value="{{old("series")}}">
                             </div>
                             
                             <div class="mb-3">
                                 <label for="date" class="form-label">SALE DATE</label>
-                                <input type="date" name="sale_date" id="date" class="form-control">
+                                <input type="date" name="sale_date" id="date" class="form-control" value="{{old("sale_date")}}">
                             </div>
                             
                             <div class="mb-3">
                                 <label for="type" class="form-label">TYPE</label>
-                                <input type="text" name="type" id="type" class="form-control">
+                                <input type="text" name="type" id="type" class="form-control" value="{{old("type")}}">
                             </div>
                             
                             <div class="mb-3">
                                 <label for="artists" class="form-label">ARTISTS</label>
-                                <input type="text" name="artists" id="artists" class="form-control">
+                                <input type="text" name="artists" id="artists" class="form-control" value="{{old("artists")}}">
                             </div>
                             
                             <div class="mb-3">
                                 <label for="writers" class="form-label">WRITERS</label>
-                                <input type="text" name="writers" id="writers" class="form-control">
+                                <input type="text" name="writers" id="writers" class="form-control" value="{{old("writers")}}">
                             </div>
                             
     

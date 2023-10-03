@@ -11,6 +11,18 @@
             {{-- editbutton --}}
 
             <a href="{{route("comics.edit", $comic->id)}}"><i class="fa-solid fa-pen text-white"></i></a>
+
+            {{-- DELETE BUTTON --}}
+
+            <form action="{{route("comics.destroy", $comic->id)}}" method="POST">
+                @csrf
+                @method("DELETE")
+                <button type="submit">
+                    <a>
+                        <i class="fa-regular fa-trash-can"></i>
+                    </a>
+                </button>
+            </form>
             
             <div class="row row-cols-2 align-items-center">        
                 <div class="col">
