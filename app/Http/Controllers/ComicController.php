@@ -41,6 +41,9 @@ class ComicController extends Controller
         $newComic = new Comic();
 
         $newComic->fill($data);
+
+        // assegnazione senza fill 
+
         // $newComic["title"] = $data["title"];
         // $newComic["description"] = $data["description"];
         // $newComic["thumb"] = $data["thumb"];
