@@ -13,6 +13,8 @@ class ComicController extends Controller
         return view("comics.index",[ "comics" => $comics]);
     }
     
+    // SHOW COMIC ID
+
     public function show($id){
         $comic = Comic::findOrFail($id);
         
@@ -22,6 +24,8 @@ class ComicController extends Controller
     public function create(){
         return view("comics.create");
     }
+
+    // STORE WITH REQUESTED CLASS
 
     public function store(GenericUpdateComicsRequest $request){
         $data = $request->validated();
@@ -50,11 +54,15 @@ class ComicController extends Controller
         return redirect()->route("comics.index");
     }
 
+    // EDIT COMIC BY ID
     public function edit($id){
         $comic = Comic::findOrFail($id);
 
         return view("comics.edit", ["comic"=>$comic]);
     }
+
+
+    // UPDATE WITH REQUESTED CLASS
 
     public function update(GenericUpdateComicsRequest $request, $id){
         $comic = Comic::findOrFail($id);
@@ -70,6 +78,7 @@ class ComicController extends Controller
 
     }
 
+    // DESTROY COMIC ID, WITH SOFT DELETE - NO DATA LOSE
     public function destroy($id){
         $comic = Comic::findOrFail($id);
         $comic->delete();

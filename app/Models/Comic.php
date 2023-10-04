@@ -8,13 +8,16 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Comic extends Model
 {
+    // ADD SOFTDELETE, ADD IN MIGRATION NEW COLUMN SOFTDELETE WIT NECESSARY ROLLBACK
     use HasFactory, SoftDeletes;
 
+    // SPECIFY TYPE IN HTML PRINT
     protected $casts = [
         "artists" => "array",
         "writers" => "array",
     ];
 
+    // NECESSARY FOL FILL AND DESTROY
     protected $fillable = [
         "title",
         "description",

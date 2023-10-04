@@ -9,6 +9,7 @@
         <div class="container bigger-container">
             
             <div class="modify-container d-flex justify-content-end align-items-center fs-3 gap-3">
+
                 {{-- editbutton --}}
     
                 <a href="{{route("comics.edit", $comic->id)}}"><i class="fa-solid fa-pen text-white"></i></a>
@@ -27,8 +28,12 @@
 
             </div>
             
+            {{-- single box comic --}}
+
             <div class="row row-cols-2 align-items-center">        
                 <div class="col">
+                    
+
                     <div class="box px-5">
                         <h3 class="fs-1">{{$comic->title}}</h3>
                         <p>{{$comic->description}}</p>
@@ -53,6 +58,7 @@
             </div>
         </div>
 
+            {{-- BUTTON CONTAINER --}}
         <div class="text-center mt-5">
             <a class="btn btn-primary mt-5 mb-4 px-5 fw-bold bottom-button" 
                 href="{{route("comics.index")}}" role="button">TORNA INDIETRO</a>

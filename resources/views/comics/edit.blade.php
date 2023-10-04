@@ -95,7 +95,10 @@
                         
 
                         <div class="text-center mb-5 d-flex gap-4">
+                            {{-- ADD MODIFIED CONTENT BUTTON --}}
                             <button class="btn btn-primary mt-5 mb-4 px-5 fw-bold bottom-button">ADD CHANGES</button>   
+
+                            {{-- CANCEL BUTTON - BACK TO INDEX --}}
                             <a class="btn btn-primary mt-5 mb-4 px-5 fw-bold bottom-button" href="{{route("comics.index")}}">CANCEL</a>   
                         </div>
                     </form>

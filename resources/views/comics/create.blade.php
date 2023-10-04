@@ -94,9 +94,12 @@
                                 @enderror
                             </div>
                             
-    
+                            
                             <div class="text-center mb-5 d-flex gap-4">
+                                {{-- ADD COMIC BUTTON --}}
                                 <button class="btn btn-primary mt-5 mb-4 px-5 fw-bold bottom-button">ADD</button>   
+
+                                {{-- cancel button - back to index  --}}
                                 <a class="btn btn-primary mt-5 mb-4 px-5 fw-bold bottom-button" href="{{route("comics.index")}}">CANCEL</a>   
                             </div>
                         </form>
