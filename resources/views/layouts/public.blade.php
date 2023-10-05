@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield("title")</title>
 
-    <meta name="description" content="Fumetti mondo DC Comics">
+    <meta name="description" content="Tutti i fumetti che hai sempre cercato direttamente dal mondo DC e Marvel">
 
     @vite(["resources/js/app.js", "resources/scss/app.scss"])
 </head>
